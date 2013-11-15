@@ -87,7 +87,7 @@ import com.common.PrintLog;
 import com.nineoldandroids.animation.ObjectAnimator;
 public class Camera extends NoSearchActivity implements ShutterButton.OnShutterButtonListener, SurfaceHolder.Callback{
 
-	private static final String TAG = "camera ac";
+	private static final String TAG = "Camera Activity";
 	
 	private static final int CROP_MSG = 1;
 	private static final int FIRST_TIME_INIT = 2;
