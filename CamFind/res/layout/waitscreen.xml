@@ -1,0 +1,94 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/camfindlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/camfind_logo"
+        android:contentDescription="@string/app_name" />
+
+    <com.alttab.camfind.customview.TextViewFonted
+        android:id="@+id/txtPeopleAheadValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camfindlogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="60sp"
+        android:text="123" 
+        android:textColor="@color/white_color"
+        app:font="proximanal.otf" />
+
+    <com.alttab.camfind.customview.TextViewFonted
+        android:id="@+id/txtPeopleAhead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPeopleAheadValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/people_ahead_you"
+        android:textColor="@color/white_color"
+        app:font="proximanal.otf"
+        android:textSize="16sp" />
+
+    <com.alttab.camfind.customview.TextViewFonted
+        android:id="@+id/txtPeopleBehindValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPeopleAhead"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/white_color"
+        app:font="proximanal.otf"
+        android:text="10"
+        android:textSize="30sp" />
+
+    <com.alttab.camfind.customview.TextViewFonted
+        android:id="@+id/txtPeopleBehind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPeopleBehindValue"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/waiting_behind_you"
+        android:textColor="@color/white_color"
+        app:font="proximanal.otf"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btnMoreInfo"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/info"
+        android:textColor="@color/white_color"/>
+
+    <Button
+        android:id="@+id/btnContact"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_above="@+id/btnMoreInfo"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_bg"
+        android:text="@string/contact"
+        android:textColor="@color/white_color" >
+    	</Button>
+    
+</RelativeLayout>

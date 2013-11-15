@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#33000000" >
+
+    <RelativeLayout
+        android:id="@+id/baseLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="#00000000" >
+
+            <LinearLayout
+                android:id="@+id/optionLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="visible" >
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/slide_close" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/slide_sound" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/slide_write" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/slide_rss" />
+            </LinearLayout>
+            <View 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/listLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000"
+            android:padding="10dp"
+            android:visibility="visible" >
+
+            <com.alttab.camfind.customview.RoundedImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/app_icon"
+                app:corner_radius="10dip" />
+
+            <LinearLayout
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgPhoto"
+                android:orientation="vertical"
+                android:paddingLeft="10dp" >
+
+                <com.alttab.camfind.customview.TextViewFonted
+                    android:id="@+id/txtName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="10dp"
+                    android:textColor="@color/white_color"
+                    app:font="proximanal.otf" />
+
+                <com.alttab.camfind.customview.TextViewFonted
+                    android:id="@+id/txtDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    android:textColor="@color/light_gray_color"
+                    app:font="proximanal.otf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/right_arrow" />
+
+</RelativeLayout>
