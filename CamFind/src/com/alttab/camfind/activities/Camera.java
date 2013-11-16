@@ -214,7 +214,7 @@ public class Camera extends NoSearchActivity implements ShutterButton.OnShutterB
 	@Override
 	public void onCreate(Bundle icicle) {
 		super.onCreate(icicle);
-		setContentView(R.layout.camera_screen);
+		setContentView(R.layout.camera);
 		init();
 		setupDefaults();
 	}
