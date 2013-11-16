@@ -61,6 +61,7 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.alttab.camfind.R;
+import com.alttab.camfind.adapters.SearchHistoryAdapter;
 import com.alttab.camfind.bean.SearchBean;
 import com.alttab.camfind.database.DBSQLite;
 import com.alttab.camfind.device.CameraHolder;
@@ -84,7 +85,6 @@ import com.alttab.camfind.ui.ZoomControllerListener;
 import com.common.DateConversion;
 import com.common.PrintLog;
 import com.nineoldandroids.animation.ObjectAnimator;
-import coms.alttab.camfind.adapter.SearchHistoryAdapter;
 public class Camera extends NoSearchActivity implements ShutterButton.OnShutterButtonListener, SurfaceHolder.Callback{
 
 	private static final String TAG = "Camera Activity";
