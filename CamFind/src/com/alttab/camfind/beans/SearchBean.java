@@ -1,4 +1,4 @@
-package com.alttab.camfind.bean;
+package com.alttab.camfind.beans;
 
 public class SearchBean 
 {

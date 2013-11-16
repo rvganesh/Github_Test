@@ -15,7 +15,7 @@ import android.widget.RelativeLayout.LayoutParams;
 import android.widget.TextView;
 
 import com.alttab.camfind.R;
-import com.alttab.camfind.bean.SearchBean;
+import com.alttab.camfind.beans.SearchBean;
 import com.alttab.camfind.listener.OnSwipeTouchListener;
 import com.alttab.camfind.util.LazyLoad;
 import com.common.MathUtils;

@@ -9,7 +9,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.alttab.camfind.bean.SearchBean;
+import com.alttab.camfind.beans.SearchBean;
 import com.common.PrintLog;
 
 public class DBSQLite extends SQLiteOpenHelper {
