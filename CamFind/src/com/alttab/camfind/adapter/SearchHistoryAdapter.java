@@ -1,4 +1,4 @@
-package com.alttab.camfind.adapters;
+package com.alttab.camfind.adapter;
 
 import java.util.ArrayList;
 
